@@ -12,35 +12,181 @@
 </head>
 <body>
 	<div id="main">
-		<h1>Kevin's Web Dev Technical Page</h1>
 		<div id="navbar">
-			<ul>
-				<div id="nav-links">
-					<li><a href="">Introduction</a></li>
-					<li><a href="">HTML5</a></li>
-					<li><a href="">CSS3</a></li>
-					<li><a href="">Javascript</a></li>
-					<li><a href="">What I have learned</a></li>
-					<li><a href="">Sources</a></li>
-				</div>
-			</ul>
+			<h1>Getting started with web dev.</h1>
+			<div id="nav-links">
+				<ul>
+					<li><a class="nav-link" href="#Introduction">Introduction</a></li>
+					<li><a class="nav-link" href="#Getting_started">Getting started</a></li>
+					<li><a class="nav-link" href="#Code_editors">Code Editors</a></li>
+					<li><a class="nav-link" href="#Setting_up_github">Github</a></li>
+					<li><a class="nav-link" href="#Chrome_dev_tools">Chrome Dev Tools</a></li>
+					<li><a class="nav-link" href="#HTML">HTML</a></li>
+					<li><a class="nav-link" href="#Laying_out_content">Laying out content</a></li>
+					<li><a class="nav-link" href="#Adding_css">Adding CSS</a></li>
+					<li><a class="nav-link" href="#Javascript">Javascript</a></li>
+					<li><a class="nav-link" href="#Jquery">Jquery</a></li>
+					<li><a class="nav-link" href="#Sources">Sources</a></li>
+				</ul>
+			</div>
 		</div>
 		<main id="main-doc">
+			<section class="main-section">
+			</section>
 			<section class="main-section" id="Introduction">
 				<header>Introduction</header>
 				<article>
+					<p>Welcome! You are here, you see this, that means that I at some point coded this site. I had to learn how to make it, I laid it out, styled it and published it. Crazy thing is, when I started I had no idea what any of this meant! Web development as a whole felt like an alien technology to me, but I can now tell you that it is not. When I wrote this and made this page, I was about 4 months into teaching myself web development. I had mostly been focusing on HTML and CSS while dabbling in some Javascript (I wanted to feel very comfortable with HTML and CSS and the different methods of doing things). Now, when I look at a website, I know how to inspect its elements to get ideas, I can read the code and know what it means (for the most part) and I can sit down and make sites like this one.</p><br>
+					<p>I made this page to help you get started with web development. I am going to try to keep it all as simple as possible, and will try to explain everything from a beginner perspective. I will also try to keep my opinions out of it, so you can in the end decide what works for you!</p>
+					<p></p>
+					<p></p>
+				</article>
+			</section>
+			<section class="main-section" id="Getting_started">
+				<header>Getting started</header>
+				<article>
+					<p>Before you start doing anything, you need to get all the tools in your toolbox to be able to do the job. Here is the kicker, there are MILLIONS of tools, so choosing one or two will mostly be up to you! For the purposes of this article I will go over 3 main things: Getting a code editor, setting up github, and info on how to use chrome developer tools</p><br>
+					<header id="Code_editors">Code Editors and IDE's</header>
+					<p>There are many code editors out there and many IDE's to choose from. Which one you choose will depend mostly on preference, but also on what you want to accomplish, whether its a native Windows App written in C#, or a simple website written in HTML CSS and JS. If you are looking at this then I am assuming that you are a newbie like me, so I will go over some basic text editors that I have used</p><br>
+
+					<h5>Sublime Text editor</h5>
+					<p>Sublime is an awesome text editor that is free (for the most part) and it is the one that I used to make this site and all my others. It is awesome for a few reasons:
+						<ul class="bodyList">
+							<li>It is very user friendly</li>
+							<li>It is very light weight and fast</li>
+							<li>It is free (not technically but you can ignore the prompt to purchase and it always works)</li>
+							<li>It is always being updated to support new languages</li>
+							<li>It is the same across all operating systems</li>
+						</ul> 
+					It is not so awesome for a few reasons:
+					<ul class="bodyList">
+							<li>You will need to install a handful of plugins before you can benefit from ST’s full potential.</li>
+							<li>Git integration is somehow a bit shallow compared to other editors.</li>
+							<li>If you decide to purchase it, it is $70 which is a bit steep for an editor.</li>
+						</ul>
+					<figure>
+						<img src="https://3.bp.blogspot.com/-Mzwlo8YnTmU/WTXJvNilbaI/AAAAAAAAD-s/mk0AzOu0EBECDXP3QG7Y8jwx9OfwH55zQCLcB/s1600/Screenshot%2Bat%2B2017-06-06%2B02%253A43%253A50.png" >
+						<figcaption>Sublime text editor</figcaption>
+					</figure>
+					Download Sublime <a href="https://www.sublimetext.com/3">Here</a>
+					</p><br>
+					<h5>Atom Text editor</h5>
+					<p>Atom is another light-weight and fast text editor that I have seen many developers use when watching Youtube videos. It is awesome for these reasons:
+						<ul class="bodyList">
+							<li>It is completely free.</li>
+							<li>Very active community or users and lots of resources/tutorials on Github/Medium, etc.</li>
+							<li>The file-tree-view is really nice and perhaps the best one across all editors.</li>
+							<li>Lots of support from Github crew since they own it.</li>
+							<li>It is the same across all operating systems.</li>
+						</ul> 
+					It is not so awesome for a few reasons:
+					<ul class="bodyList">
+							<li>Takes some time to get the right setup.</li>
+							<li>Has some issues handling large repos/folders and CPU usage can go pretty high. It’s a browser-based app (runs on Electron), and is a bit slow to load and sometimes to respond.</li>
+							<li>Most of the core is written in CoffeeScript, but the Github team is transitioning to ES6.</li>
+							<li>Strange syntax management sometimes, you get a different color for your variable name depending on what you typed before (const, let, var etc.).</li>
+						</ul>
+					<figure>
+						<img src="https://www.fosslinux.com/wp-content/uploads/2017/07/Atom-Text-Editor.jpg" >
+						<figcaption>Atom text editor</figcaption>
+					</figure>
+					Download Atom <a href="https://atom.io/">here</a>
+					</p><br>
+					<h5>Brackets</h5>
+					<p>Brackets is another really good and fast text editor. I have used it in the past but have since decided to go with Sublime. It is awesome for a few reasons:
+						<ul class="bodyList">
+							<li>It is Free!</li>
+							<li>It does Code completion out of the box.</li>
+							<li>The split window mode is really easy to use and intuitive.</li>
+							<li>When you mark any HTML element and press Cmd/Ctrl + E, Brackets opens all CSS associated with this element inline in the current window. From here, you can make any edits you need. Once you close it, any changes will automatically be applied to the stylesheet connected with this element. Nice!</li>
+						</ul> 
+					It is not so awesome for a few reasons:
+					<ul class="bodyList">
+							<li>Needs plugins and packages to really be complete.</li>
+							<li>Supports only web languages out of the box.</li>
+							<li>Can also be slow at times but no big deal (especially compared to Atom).</li>
+						</ul>
+					<figure>
+						<img src="http://www.spiceforms.com/blog/wp-content/uploads/2014/11/split.png" >
+						<figcaption>Brackets text editor</figcaption>
+					</figure>
+					Download Brackets <a href="http://brackets.io/">here</a>
+					</p><br>
+					<h5>Visual Studio Code</h5>
+					<p>Visual studio code is a very popular text coding program especially in enterprise settings. The developers where I work use it to write their .NET and C# applications. I used it once or twice to try and get a node server going using npm. It is awesome for a few reasons:
+						<ul class="bodyList">
+							<li>It is stable.</li>
+							<li>It is fast.</li>
+							<li>It is reliable.</li>
+							<li>It has a debugger built in.</li>
+						</ul> 
+					It is not so awesome for a few reasons:
+					<ul class="bodyList">
+							<li>The interface is not as polished as some of the other text editors.</li>
+							<li>The navigation system is a bit odd.</li>
+							<li>You can only get it on Microsoft.</li>
+						</ul>
+					<figure>
+						<img src="https://code.visualstudio.com/assets/docs/getstarted/userinterface/hero.png" >
+						<figcaption>VS code editor</figcaption>
+					</figure>
+					Download Visual Studio <a href="https://code.visualstudio.com/">here</a>
+					</p><br>
+					<header id="Setting_up_github">Setting up Github</header>
+					<p>If you have heard anything about web development or development in general, then you have heard of Github. Github is an open source community where people can collaborate and share there work. Most job postings I have seen have required knowledge of Github, or Git in general.</p><br>
+					<h4>Using Chrome Developer tools</h4>
+					<p>One thing that I have learned is that Chrome Developer tools is AWESOME. You can test code changes on the fly, write Javascript code on the fly in the console, inspect elements to get ideas, and more.</p><br>
+					
+					<h4>Setting up Github, and learning how to use it</h4>
+					<p>If you have heard anything about web development or development in general, then you have heard of Github. Github is an open source community where people can collaborate and share there work. Most job postings I have seen have required knowledge of Github, or Git in general.</p><br>
+					<h4>Using Chrome Developer tools</h4>
+					<p>One thing that I have learned is that Chrome Developer tools is AWESOME. You can test code changes on the fly, write Javascript code on the fly in the console, inspect elements to get ideas, and more.</p><br>
+				</article>
+			</section>
+			<section class="main-section" id="HTML">
+				<header>HTML</header>
+				<article>
+					<p>Ok, now that you got your environment set up and somewhat know how it works, now its time to get into the fun part.</p>
+					<p></p>
+					<p></p>
+				</article>
+			</section>
+			<section class="main-section" id="Laying_out_content">
+				<header>Laying out Content</header>
+				<article>
+					<p>There are several different ways to lay out your content in the web browser. As a newbie, I can tell you that the sheer amount of difference in opinions of which to use can sometimes be overwhelming. I have personally used all three at least once, so I will list some pros and cons of each so that you can make your own decision on which to use.</p>
+					<h4>Manual Layouts</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p></p>
-					<p></p>
+					<h4>Bootstrap 4</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<h4>CSS Grid</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<h4>Flexbox</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</article>
 			</section>
-			<section class="main-section" id="HTML5">
-				<header>HTML5</header>
+			<section class="main-section" id="Adding_css">
+				<header>Adding CSS</header>
 				<article>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -52,20 +198,7 @@
 					<p></p>
 				</article>
 			</section>
-			<section class="main-section" id="CSS3">
-				<header>CSS3</header>
-				<article>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p></p>
-					<p></p>
-				</article>
-			</section>
-			<section class="main-section" id="Javascript">
+				<section class="main-section" id="Javascript">
 				<header>Javascript</header>
 				<article>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -78,8 +211,21 @@
 					<p></p>
 				</article>
 			</section>
-			<section class="main-section" id="Help">
-				<header>Help sources</header>
+				<section class="main-section" id="Jquery">
+				<header>Jquery</header>
+				<article>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p></p>
+					<p></p>
+				</article>
+			</section>
+				<section class="main-section" id="Sources">
+				<header>Sources</header>
 				<article>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -96,5 +242,7 @@
 			</footer>
 		</main>
 	</div>
+
+<script src="script.js" type="text/javascript"></script>
 </body>
 </html>
