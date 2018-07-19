@@ -20,13 +20,10 @@
 					<li><a class="nav-link" href="#Getting_started">Getting started</a></li>
 					<li><a class="nav-link" href="#Code_editors">Code Editors</a></li>
 					<li><a class="nav-link" href="#Setting_up_github">Github</a></li>
-					<li><a class="nav-link" href="#Chrome_dev_tools">Chrome Dev Tools</a></li>
 					<li><a class="nav-link" href="#HTML">HTML</a></li>
-					<li><a class="nav-link" href="#Laying_out_content">Laying out content</a></li>
+          <li><a class="nav-link" href="#Laying_out_content">Laying out content</a></li>
 					<li><a class="nav-link" href="#Adding_css">Adding CSS</a></li>
 					<li><a class="nav-link" href="#Javascript">Javascript</a></li>
-					<li><a class="nav-link" href="#Jquery">Jquery</a></li>
-					<li><a class="nav-link" href="#Sources">Sources</a></li>
 				</ul>
 			</div>
 		</div>
@@ -90,7 +87,7 @@
 						<img src="https://www.fosslinux.com/wp-content/uploads/2017/07/Atom-Text-Editor.jpg" >
 						<figcaption>Atom text editor</figcaption>
 					</figure>
-					Download Atom <a href="https://atom.io/">here</a>
+					Download Atom <a href="https://atom.io/	">here</a>
 					</p><br>
 					<h5>Brackets</h5>
 					<p>Brackets is another really good and fast text editor. I have used it in the past but have since decided to go with Sublime. It is awesome for a few reasons:
@@ -133,20 +130,13 @@
 					Download Visual Studio <a href="https://code.visualstudio.com/">here</a>
 					</p><br>
 					<header id="Setting_up_github">Setting up Github</header>
-					<p>If you have heard anything about web development or development in general, then you have heard of Github. Github is an open source community where people can collaborate and share there work. Most job postings I have seen have required knowledge of Github, or Git in general.</p><br>
-					<h4>Using Chrome Developer tools</h4>
-					<p>One thing that I have learned is that Chrome Developer tools is AWESOME. You can test code changes on the fly, write Javascript code on the fly in the console, inspect elements to get ideas, and more.</p><br>
-					
-					<h4>Setting up Github, and learning how to use it</h4>
-					<p>If you have heard anything about web development or development in general, then you have heard of Github. Github is an open source community where people can collaborate and share there work. Most job postings I have seen have required knowledge of Github, or Git in general.</p><br>
-					<h4>Using Chrome Developer tools</h4>
-					<p>One thing that I have learned is that Chrome Developer tools is AWESOME. You can test code changes on the fly, write Javascript code on the fly in the console, inspect elements to get ideas, and more.</p><br>
+					<p>If you have heard anything about web development or development in general, then you have heard of Github. Github is an open source community where people can collaborate and share there work. Most job postings I have seen have required knowledge of Github, or Git in general. To set up and learn how to use Github, follow <a href="https://guides.github.com/activities/hello-world/">this</a> link and you will be on your way!</p><br>
 				</article>
 			</section>
 			<section class="main-section" id="HTML">
 				<header>HTML</header>
 				<article>
-					<p>Ok, now that you got your environment set up and somewhat know how it works, now its time to get into the fun part.</p>
+					<p>Ok, now that you got your environment set up and somewhat know how it works, now its time to get into the fun part, HTML. I would make a write up on it, but there is an amazing resource called <a href="https://www.w3schools.com/">W3 Schools</a> which will be able to show you anything you want to learn about HTML and otherwise. Check them out!</p>
 					<p></p>
 					<p></p>
 				</article>
@@ -154,46 +144,22 @@
 			<section class="main-section" id="Laying_out_content">
 				<header>Laying out Content</header>
 				<article>
-					<p>There are several different ways to lay out your content in the web browser. As a newbie, I can tell you that the sheer amount of difference in opinions of which to use can sometimes be overwhelming. I have personally used all three at least once, so I will list some pros and cons of each so that you can make your own decision on which to use.</p>
+					<p>There are several different ways to lay out your content in the web browser. As a newbie, I can tell you that the sheer amount of difference in opinions of which to use can sometimes be overwhelming. I have personally used all three at least once, so I will list some pros and cons of each so that you can make your own decision on which to use.</p><br>
 					<h4>Manual Layouts</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>One way of laying out a site is by using margins and relative positioning. This is pretty much what I did for this site, just to see if I could make something without Bootstrap like I always do. You have to manually set the margins, widths and heights, then you have to do some extensive media queries to get it all to work on mobile. For example, to make the sidebar on this site, I did the following CSS for an id of Navbar: <code>#Navbar {top: 0; left: 0; height 100%; width: 200px;} </code> Looks simple right! Well here is the thing, how are you gonna get the rest of the content to the right? well, if your viewport is fully expanded, you could simply add a <code> margin-left: 200px</code> so that the content starts 200px from the left of the screen leaving space for the sidebar. The main pro about this method is that it will work with pretty much all browsers, since it is just plain CSS.</p><br>
 					<h4>Bootstrap 4</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Bootstrap is a full framework which provides pre-defined classes, which makes it easy to create a layout and make it all responsive. I personally prefer Bootstrap and have used it on all my projects except this one. Basically, to use Bootstrap, you just link to the CDN (or download it once you get to backend stuff) then start using its layout system and predefined classes. One of the coolest parts about Bootstrap is the layout system. In the layout system you have containers, rows and colums. If you wanted to make three cards in line, for example, you would just make a div class of "container" (or container-fluid for full width) then a div class of row, then 3 columns of col-sm-3. There are 12 columns in Bootstrap, so if you want two side boxes that are equal, you can use col-sm-6 twice. I know this is an extreme simplification of it. To learn more visit the <a href="https://getbootstrap.com/">Bootstrap</a> website and learn more!</p><br>
 					<h4>CSS Grid</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<h4>Flexbox</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>CSS grid is a fairly new way of laying out content on a webpage which simplifies the HTML needed to lay content out. I have tried using it but had issues with cross browser compatibility. For more info on CSS grid visit <a href="https://medium.com/flexbox-and-grids/how-to-efficiently-master-the-css-grid-in-a-jiffy-585d0c213577">this</a> link.</p>
 				</article>
 			</section>
 			<section class="main-section" id="Adding_css">
 				<header>Adding CSS</header>
 				<article>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>CSS stands for Cascading Style Sheets
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+CSS saves a lot of work. It can control the layout of multiple web pages all at once
+External stylesheets are stored in CSS files. Without CSS, websites would look like the first HTML website ever made: <a href="http://info.cern.ch/hypertext/WWW/TheProject.html"></a> CSS adds color, styling and more to your page, and is what makes websites look so good. For example, if you were to just add an image from a website using <code>img src="image.google.com"</code> it would default to whatever the image size is from the source. To fix this, you would go into your CSS document and select the Img tag, then change the properties like so: <code>img {width: 450px; height: auto;}.</code> The following code would make all images have a width of 450px and the height would be calculated depending on its aspect ration. If you wanted to control each image separately, you would have to add a class to the image such as <code> img class="image1"</code> then add the CSS: <code> .image1 {width: 450px; height: auto;} </code> To get started with CSS, head over to <a href="https://www.w3schools.com/css/css_intro.asp">W3 Schools</a> to learn more!</p>
 					<p></p>
 					<p></p>
 				</article>
@@ -201,39 +167,8 @@
 				<section class="main-section" id="Javascript">
 				<header>Javascript</header>
 				<article>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p></p>
-					<p></p>
-				</article>
-			</section>
-				<section class="main-section" id="Jquery">
-				<header>Jquery</header>
-				<article>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p></p>
-					<p></p>
-				</article>
-			</section>
-				<section class="main-section" id="Sources">
-				<header>Sources</header>
-				<article>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p></p>
+					<p>Javascript is what makes websites interactive. It can be used for so many things including online game controllers, calculators, validation, editing html and css on the fly, etc. The awesome thing about Javascript is that it has so many frameworks so you can accomplish so many different things. I have not gotten too much into Javascript yet so I will just link you to <a href="https://www.w3schools.com/js/default.asp">W3 Schools</a> so you can go check it out.</p><br>
+					<p>Now keep in mind, I just made this for a project for Free Code Camp, but I will go back and keep updating it once I learn some more, and will most likely turn it into a blog. Thanks for checking it out.</p>
 					<p></p>
 				</article>
 			</section>
